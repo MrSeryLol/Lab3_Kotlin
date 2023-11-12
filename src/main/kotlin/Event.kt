@@ -10,3 +10,10 @@ data class Event(
     val daypart: Daypart,
     val durationInMinutes: Int,
 )
+
+val Event.durationOfEvent: String
+    get() = if (this.durationInMinutes < 60) {
+        "short"
+    } else {
+        "long"
+    }

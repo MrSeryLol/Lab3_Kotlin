@@ -24,5 +24,8 @@ fun main(args: Array<String>) {
 //    }
 
     //Task 6
-    println("Last event of the day: ${events.last().title}")
+    //println("Last event of the day: ${events.last().title}")
+
+    //Task 7
+    println("Duration of first event of the day: ${events[0].durationOfEvent}")
 }
