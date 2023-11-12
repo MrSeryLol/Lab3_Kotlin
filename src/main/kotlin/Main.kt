@@ -18,8 +18,11 @@ fun main(args: Array<String>) {
 //    val shortEvents = events.filter { it.durationInMinutes < 60 }
 //    println("You have ${shortEvents.size} short events.")
     //Task 5
-    val groupedEvents = events.groupBy { it.daypart }
-    groupedEvents.forEach { (daypart, events) ->
-        println("$daypart: ${events.size} events")
-    }
+//    val groupedEvents = events.groupBy { it.daypart }
+//    groupedEvents.forEach { (daypart, events) ->
+//        println("$daypart: ${events.size} events")
+//    }
+
+    //Task 6
+    println("Last event of the day: ${events.last().title}")
 }
